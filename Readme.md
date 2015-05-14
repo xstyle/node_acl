@@ -43,6 +43,7 @@ npm install acl
 * [roleUsers](#roleUsers)
 * [hasRole](#hasRole)
 * [addRoleParents](#addRoleParents)
+* [removeRoleParents](#removeRoleParents)
 * [removeRole](#removeRole)
 * [removeResource](#removeResource)
 * [allow](#allow)
@@ -284,6 +285,21 @@ __Arguments__
 ```javascript
     role     {String} Child role.
     parents  {String|Array} Parent role(s) to be added.
+    callback {Function} Callback called when finished.
+```
+
+---------------------------------------
+
+<a name="removeRoleParents" />
+### removeRoleParents( role, parents, function(err) )
+
+Removes a parent or parent list to role.
+
+__Arguments__
+
+```javascript
+    role     {String} Child role.
+    parents  {String|Array} Parent role(s) to be removed.
     callback {Function} Callback called when finished.
 ```
 
